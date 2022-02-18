@@ -268,3 +268,9 @@ section.portfolio-thumbnail .github-btn {
     line-height: 180%;
     letter-spacing: 1px;
 }
+
+/* --------contact--------------- */
+
+.contact-me {
+    background: var(--bg-accent);
+}
