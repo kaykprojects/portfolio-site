@@ -157,3 +157,57 @@ section.main {
     background-color: var(--color-white);
     border: var(--stroke-thin) solid var(--stroke);    
 }
+
+/* ---portfolio  thumbnail section ----- */
+
+.thumbnail-intro {
+    text-align: center;
+}
+
+section.portfolio-thumbnail {
+    background-color: var(--bg-accent);
+    width: 100%;
+    height: auto;
+}
+
+
+section.portfolio-thumbnail .btn {
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: var(--bg-accent);
+}
+
+section.portfolio-thumbnail .btn:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.116);
+    transition: all 0.2s ease;
+}
+
+
+.portfolio img {
+    border-radius:10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio h3, 
+.portfolio p,
+.portfolio small {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.portfolio p {
+    font-size: var(--text-small);
+}
+
+.portfolio small {
+    font-size: var(--text-small);
+    font-style: italic;
+}
+
+
+section.portfolio-thumbnail .github-btn {
+    background-color: var(--btn-accent);
+}
