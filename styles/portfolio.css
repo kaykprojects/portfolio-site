@@ -43,6 +43,7 @@ h3 {
     font-size: var(--title-text-xs);
 }
 
+
 /* -----nav menu -------------- */
 
 .navbar, 
@@ -273,4 +274,135 @@ section.portfolio-thumbnail .github-btn {
 
 .contact-me {
     background: var(--bg-accent);
+}
+
+
+
+
+/* -----footer --- */
+ 
+footer .nav .page-links,
+.social {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social a {
+    color: var(--stroke);
+    padding: 0 20px;
+}
+
+footer.social a {
+    margin-left: 20px;    
+}
+
+footer small {
+    display: block;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/* media queries */
+@media (min-width: 768px) {
+     h1 {
+        font-size: var(--title-text-big);
+    }
+
+    h2 {
+        font-size: var(--title-text-medium);
+    }
+
+    .myRole {
+        font-size: var(--title-text-small);
+    }
+
+    .about-img {
+        width: 95%;
+    }
+
+    .about-desc {
+        text-align: left;
+        width: 40%;
+        line-height: 200%;
+        letter-spacing: 2px;       
+        margin: auto; 
+    }
+
+    .about-desc .myProjectBtn {
+        width: 200px;
+        left: 0;
+    }
+
+    .offering {
+        max-width: 700px;
+        margin: 50px auto;
+    }
+
+    .offering p {
+        width: 150px;
+        height: 150px;
+        border: var(--stroke-normal) solid var(--stroke);
+        font-size: var(--text-s-medium);
+        padding: 45px 10px;
+    }
+
+    .offering p:first-child,
+    .offering p:last-child {
+        padding: 60px 3px;
+    }
+
+    
+    .portfolio h3,
+    .portfolio p,
+    .portfolio small {
+        width: 90%;
+        margin-top: 0;        
+        text-align: left;
+    }
+
+    .portfolio p {
+        font-size: var(--text-small);
+    }
+    
+    .portfolio small {
+        font-size: var(--text-small);
+        font-style: italic;
+    }
+
+    section.portfolio-thumbnail .btn {
+        margin-left: 5%;
+        display: inline;
+    }  
+
+    footer .nav .page-links,
+    .social {
+        width: auto;
+    } 
+    
+    footer small {
+        text-align: right;
+        margin-right: 45px;
+        padding-top: 8px;
+        font-size: var(--text-x-small);
+    }    
+}
+
+@media (min-width: 1024px) {    
+    .portfolio-thumbnail .row {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .about-me {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .about-desc {
+        font-size: var(--text-medium);
+    }
 }
