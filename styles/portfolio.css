@@ -75,3 +75,85 @@ h1, h2 {
 .active {
     color: var(--btn-accent);    
 }
+
+
+/* ------hero section------------ */
+
+section.main {
+    text-align: center;
+    padding: 120px 40px;
+    position: relative;
+}
+
+.intro h1 span {
+    color: var(--btn-accent);
+    display: inline-block;
+}
+
+.intro h1 span:hover {
+    animation-name: nudge;
+    animation-duration: 1s;
+    cursor: default;
+}
+
+@keyframes nudge {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.myRole {
+    margin-top: 30px;
+}
+
+.offering {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.offering p {
+    width: 80px;
+    height: 80px;
+    border: var(--stroke-thin) solid var(--stroke);
+    border-radius: 50%;
+    font-size: var(--text-x-small);
+    padding: 20px 3px;
+    text-align: center;
+}
+
+
+.offering p:first-child {
+    padding: 30px 3px;
+}
+
+.offering p:nth-child(2) {
+    background-color: var(--bg-accent);
+}
+
+
+.offering p:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor:default;
+}
+
+/* ---- button link ---- */
+.myProjectBtnParent {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.myProjectBtn {
+    background-color: var(--btn-accent);
+    font-weight: 500;
+    font-size: var(--text-x-medium);
+    width: 180px;
+    padding: 10px;
+    color: var(--color-white);    
+}
+
+.myProjectBtn:hover {
+    background-color: var(--color-white);
+    border: var(--stroke-thin) solid var(--stroke);    
+}
