@@ -15,7 +15,8 @@
 
     --title-text-big: 80px;
     --title-text-medium: 50px;
-    --title-text-small: 30px; 
+    --title-text-small: 35px; 
+    --title-text-xs: 25px;
     
     --text-medium: 24px;
     --text-s-medium: 15px;
@@ -30,8 +31,16 @@ body {
     min-width: 360px;
 }
 
-h1, h2 {
+h1 {
     font-size: var(--title-text-medium);
+}
+
+h2 {
+    font-size: var(--title-text-small)
+}
+
+h3 {
+    font-size: var(--title-text-xs);
 }
 
 /* -----nav menu -------------- */
@@ -210,4 +219,52 @@ section.portfolio-thumbnail .btn:hover {
 
 section.portfolio-thumbnail .github-btn {
     background-color: var(--btn-accent);
+}
+
+
+
+/* ----------------about me page ----------------------------- */
+.about-me h4 {
+    background: var(--bg-accent);
+    width: 80%;
+    margin: auto;
+}
+
+.hello {
+    width: 100px;
+    top: 50%;
+    left: 20%;
+    z-index: 3;
+}
+
+.about-img {
+    width: 70%;
+    padding: 40px 0;
+    max-width: 500px;
+    align-items: center;
+    margin: auto;
+    border-radius: 20%;
+}
+
+.contact-img {
+    border-radius: 10px;
+    width: 70%;
+}
+
+.contacts a {
+    margin: 20px;
+}
+
+
+.about-desc {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: var(--text-s-medium);
+}
+
+
+.about-desc p {
+    line-height: 180%;
+    letter-spacing: 1px;
 }
